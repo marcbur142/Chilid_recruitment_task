@@ -6,13 +6,10 @@ Simple SPA containing a table whose main features are: sorting, pagination and R
 
 1. Install the npm packages described in the package.json:
 
-`npm install`
+ `npm install`
 
 2. Run `ng serve` for a dev server. 
 
 3. Navigate to `http://localhost:4200/`. 
 
-## Further help
-
-To get more help on the angular-cli use ng help or go check out the Angular-CLI README.
 
