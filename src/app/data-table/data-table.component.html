@@ -1,0 +1,70 @@
+<div class="mat-elevation-z8 table-data">
+  <mat-table #table [dataSource]="dataSource" matSort aria-label="Elements" [class.isMobile]="isMobile">
+
+    <!-- Id Column -->
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>iD</mat-header-cell>
+      <mat-cell *matCellDef="let row">
+        <span class="mobile-label">iD:</span>
+          {{row.id}}
+      </mat-cell>
+    </ng-container>
+
+    <!-- First_name Column -->
+    <ng-container matColumnDef="first_name">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>First-name</mat-header-cell>
+      <mat-cell *matCellDef="let row">
+          <span class="mobile-label">First-name:</span>
+          {{row.first_name}}
+      </mat-cell>
+    </ng-container>
+
+    <!-- Last_name Column -->
+    <ng-container matColumnDef="last_name">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Last-name</mat-header-cell>
+      <mat-cell *matCellDef="let row">
+          <span class="mobile-label">Last-name:</span>
+          {{row.last_name}}
+      </mat-cell>
+    </ng-container>
+
+    <!-- Birth_date Column -->
+    <ng-container matColumnDef="birth_date">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Birth-date</mat-header-cell>
+      <mat-cell *matCellDef="let row">
+          <span class="mobile-label">Birth-date:</span>
+          {{row.birth_date}}
+      </mat-cell>
+    </ng-container>
+
+    <!--Company_name Column -->
+    <ng-container matColumnDef="company">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Company</mat-header-cell>
+      <mat-cell *matCellDef="let row">
+          <span class="mobile-label">Company:</span>
+          {{row.company}}
+      </mat-cell>
+    </ng-container>
+
+    <!-- Note Column -->
+    <ng-container matColumnDef="note">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Note</mat-header-cell>
+      <mat-cell *matCellDef="let row">
+          <span class="mobile-label">Note:</span>
+          {{row.note}}
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+  <mat-paginator #paginator
+    [length]="dataSource.data.length"
+    [pageIndex]="0"
+    [pageSize]="5"
+    [hidePageSize]="true"
+    [showFirstLastButtons]=true>
+  </mat-paginator>
+</div>
+

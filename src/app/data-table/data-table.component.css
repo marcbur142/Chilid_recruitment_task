@@ -1,0 +1,112 @@
+.table-data{
+  width: 70%;
+  margin: 0.1vh auto;
+}
+.mat-table{
+  border-radius: 8px;
+  color: #3A5071;
+}
+.mat-paginator{
+  height: 0;
+}
+.mat-cell,.mat-header-cell{
+  color: #3A5071;
+  font-size: 1rem;
+  justify-content: center !important;
+  border-style: solid;
+  border-width: 0 0 0 0.1px;
+  border-color: #b3c2e0;
+}
+.mat-cell:first-child,.mat-header-cell:first-child{
+  border-style: none;
+  flex: 0 0 5%;
+}
+.mat-cell:nth-child(4),.mat-header-cell:nth-child(4){
+  flex: 0 0 27%;
+}
+.mat-header-cell{
+  font-size: 0.8rem;
+  justify-content: center !important;
+}
+.mat-header-cell,.mat-cell:nth-child(2n-1){
+  font-weight: bold;
+}
+.mat-column-Id {
+  flex: 0 0 10%;
+  align-items: center;
+}
+.mat-column-First_name {
+  flex: 0 0 17%;
+}
+.mat-column-Last_name {
+  flex: 0 0 17%;
+}
+.mat-column-Birth_date {
+  flex: 0 0 22%;
+}
+.mat-column-Company {
+  flex: 0 0 17%;
+}
+.mat-column-Note {
+  flex: 0 0 17%;
+}
+.mat-row:nth-child(2n-1),.mat-header-row{
+  background-color: #E5EEFB;
+}
+.mat-header-row{
+  border-radius: 8px 8px 0 0;
+}
+.mobile-label {
+  display: none;
+}
+@media(max-width: 850px) {
+  .mat-cell{
+    color: #3A5071;
+    font-size: 0.74rem;
+  }
+}
+@media(max-width: 600px) {
+  .table-data{
+    width: 88%;
+  }
+  .mat-cell:first-child{
+    min-height: 28px;
+  }
+  .mat-cell{
+    font-size: 0.8rem;
+    min-height: 10px;
+    border-style: none;
+    padding-left: 10%;
+  }
+  .mat-header-cell{
+    font-size: 0.6rem;
+    flex: 0 0 16%;
+    border-style: none;
+  }
+  .mat-header-cell:first-child,.mat-cell:first-child,.mat-header-cell:first-child{
+    flex: 0 0 7.5%;
+  }
+  .mat-header-cell:nth-child(5){
+    flex: 0 0 20%;
+  }
+  .mat-cell:nth-child(4),.mat-header-cell:nth-child(4){
+    flex: 0 0 16%;
+  }
+  .mat-row {
+    flex-direction: column;
+    align-items: start;
+    padding: 8px 28px;
+    height: 210px;
+  }
+  .mobile-label {
+    width: 110px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+}
+@media(max-width: 350px) {
+  .mat-cell,.mobile-label{
+    font-size: 0.6rem;
+  }
+}

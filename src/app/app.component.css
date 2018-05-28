@@ -1,0 +1,27 @@
+#logo,#logotop,#logotop2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 4vh;
+}
+#logo img,#logotop img,#logotop2 img{
+  height: 100%;
+}
+#logo img{
+  margin-top: 16%;
+}
+#logotop{
+  margin-top: 2.5%;
+  height: 8vh;
+}
+#logotop2{
+  height: 13vh;
+}
+@media(max-width: 600px) {
+  #logo img{
+    margin-top: 40%;
+    padding-bottom: 5%;
+  }
+}
